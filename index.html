@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <!-- fontawesome cdn file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/logo.png">
 
     <!-- Montserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
         <div class="sidebar">
@@ -29,23 +34,25 @@
             </div>
             <div class="library">
                 <div class="options">
-                    <div class="nav-lib nav-items">    <!--We gave nav-items class to give same styling of hovering-->
+                    <div class="nav-lib nav-items"> <!--We gave nav-items class to give same styling of hovering-->
                         <img src="./assets/library_icon.png">
                         <a href="#">Library</a>
                     </div>
-                    <div class="icons">   <!--We gave nav-items class to give same styling of hovering-->
+                    <div class="icons"> <!--We gave nav-items class to give same styling of hovering-->
                         <i class="fa-solid fa-plus"></i>
                         <i class="fa-sharp fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
                 <div class="lib-boxes">
-                    <div class="box">   <!--Box1-->
-                        <p class="box-p1">Create your first playlist</p> <!--These are made p in place of div as p had by default spacing in it-->
+                    <div class="box"> <!--Box1-->
+                        <p class="box-p1">Create your first playlist</p>
+                        <!--These are made p in place of div as p had by default spacing in it-->
                         <p class="box-p2">It's easy, we'll help you</p>
                         <button class="badge">Create playlist</button>
                     </div>
-                    <div class="box">   <!--Box2-->
-                        <p class="box-p1">Let's find some podcasts to follow</p> <!--These are made p in place of div as p had by default spacing in it-->
+                    <div class="box"> <!--Box2-->
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <!--These are made p in place of div as p had by default spacing in it-->
                         <p class="box-p2">We'll keep you updated on new epidsodes</p>
                         <button class="badge">Browse podcasts</button>
                     </div>
@@ -60,7 +67,8 @@
                 </div>
                 <div class="sticky-nav-options">
                     <button class="badge sticky-nav-items hide">Exlpore Premium</button>
-                    <button class="badge sticky-nav-items dark-badge"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <button class="badge sticky-nav-items dark-badge"><i class="fa-regular fa-circle-down"></i> Install
+                        App</button>
                     <i class="fa-solid fa-user sticky-nav-items"></i>
                 </div>
             </div>
@@ -124,7 +132,7 @@
                 <div class="line"></div>
             </div>
         </div>
-        
+
         <div class="music-player">
             <div class="album">
                 <img src="./assets/lover.png" alt="" class="album-items">
@@ -132,14 +140,17 @@
                     <div>Lover</div>
                     <div>Taylor Swift</div>
                 </div>
-                <i class="fa-regular fa-heart album-items"></i>
-                <i class="fa-regular fa-heart album-items"></i>
+                <i id="empty-heart" class="fa-regular fa-heart album-items empty-heart"></i>
+                <i id="solid-heart" class="fa-solid fa-heart album-items solid-heart"
+                    style="color: red; display: none;">
+                </i>
             </div>
             <div class="player">
                 <div class="player-controls">
                     <img src="./assets/player_icon1.png" alt="" class="player-controls-icon">
                     <img src="./assets/player_icon2.png" alt="" class="player-controls-icon">
-                    <img src="./assets/player_icon3.png" alt="" class="player-controls-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon3.png" alt="" class="player-controls-icon"
+                        style="opacity: 1; height: 2rem;">
                     <img src="./assets/player_icon4.png" alt="" class="player-controls-icon">
                     <img src="./assets/player_icon5.png" alt="" class="player-controls-icon">
                 </div>
@@ -152,5 +163,7 @@
             <div class="controls"></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
