@@ -1,4 +1,13 @@
-<h1 align="center"><a href="https://listen-spotify.netlify.app/">Spotify Clone Website</a></h1>
+<p align="center">
+  <img src="https://github.com/iamvishalrathi/Spotify-Clone/blob/main/assets/logo.png" width="50" alt="logo">
+</p>
+<p align="center">
+    <h1 align="center">Spotify</h1>
+</p>
+<p align="center">
+    <em><code><a href="https://listen-spotify.netlify.app/" target="_blank" >❯ Live</a></code></em>
+</p>
+
 This repository contains a clone of the popular music streaming service Spotify. It replicates the core functionalities and user interface of Spotify, allowing users to browse music, create playlists, and enjoy their favorite tracks.
 
 ### Features
